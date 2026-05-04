@@ -1,10 +1,28 @@
-﻿namespace project01
+﻿using System;
+using System.Collections.Generic;
+
+namespace project01
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Movie Website System (Console App) Task:
+
+
+            // Movies
+            List<Movie> movies = new List<Movie>();
+
+            Movie m1 = new Movie("Inception", "Sci-Fi", 2010, 9);
+            Movie m2 = new Movie("Titanic", "Romance", 1997, 8);
+            Movie m3 = new Movie("Interstellar", "Sci-Fi", 2014, 10);
+
+            movies.Add(m1);
+            movies.Add(m2);
+            movies.Add(m3);
+
+
+
         }
     }
 }
