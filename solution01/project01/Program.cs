@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 
 namespace project01
 {
@@ -24,7 +25,9 @@ namespace project01
             movies.Add(m2);
             movies.Add(m3);
 
+            //User
 
+            User u1 = new User("Malak", 25);
 
 
         }
