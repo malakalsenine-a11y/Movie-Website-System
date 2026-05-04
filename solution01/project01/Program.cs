@@ -41,6 +41,13 @@ namespace project01
             {
                 Console.WriteLine($"{m.Title} - {m.Rating}");
             }
+
+            // Display Reviews
+            Console.WriteLine("\nReviews:");
+            foreach (var r in reviews)
+            {
+                Console.WriteLine($"{r.UserName} rated {r.MovieTitle}: {r.Rate} - {r.Comment}");
+            }
         }
     }
 }
