@@ -44,8 +44,25 @@ namespace project01
         }
     }
 
-    
 
+    // =======================
+    // Review Class
+    // =======================
+    class Review
+    {
+        public string UserName { get; set; }
+        public string MovieTitle { get; set; }
+        public string Comment { get; set; }
+        public int Rate { get; set; }
+
+        public Review(string userName, string movieTitle, string comment, int rate)
+        {
+            UserName = userName;
+            MovieTitle = movieTitle;
+            Comment = comment;
+            Rate = rate;
+        }
+    }
     // =======================
     // Program (YOUR CODE - NO CHANGES)
     // =======================
