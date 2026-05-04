@@ -34,6 +34,13 @@ namespace project01
 
             Review r1 = new Review("Ali", "Inception", "Great movie!", 10);
             reviews.Add(r1)
+
+                // Display Movies
+            Console.WriteLine("\nMovies:");
+            foreach (var m in movies)
+            {
+                Console.WriteLine($"{m.Title} - {m.Rating}");
+            }
         }
     }
 }
