@@ -4,6 +4,33 @@ using System.Reflection.Metadata;
 
 namespace project01
 {
+    // =======================
+    // Movie Class
+    // =======================
+    class Movie
+    {
+        public string Title { get; set; }
+        public string Genre { get; set; }
+        public int Year { get; set; }
+        public int Rating { get; set; }
+
+        public Movie(string title, string genre, int year, int rating)
+        {
+            Title = title;
+            Genre = genre;
+            Year = year;
+
+            if (rating < 1 || rating > 10)
+                Rating = 5;
+            else
+                Rating = rating;
+        }
+    }
+
+   
+    // =======================
+    // Program (YOUR CODE - NO CHANGES)
+    // =======================
     internal class Program
     {
         static void Main(string[] args)
@@ -33,9 +60,9 @@ namespace project01
             List<Review> reviews = new List<Review>();
 
             Review r1 = new Review("Ali", "Inception", "Great movie!", 10);
-            reviews.Add(r1)
+            reviews.Add(r1);
 
-                // Display Movies
+            // Display Movies
             Console.WriteLine("\nMovies:");
             foreach (var m in movies)
             {
