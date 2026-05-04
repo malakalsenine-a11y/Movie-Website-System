@@ -29,7 +29,11 @@ namespace project01
 
             User u1 = new User("Malak", 25);
 
+            // Reviews
+            List<Review> reviews = new List<Review>();
 
+            Review r1 = new Review("Ali", "Inception", "Great movie!", 10);
+            reviews.Add(r1)
         }
     }
 }
